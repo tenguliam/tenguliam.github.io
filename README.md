@@ -1,6 +1,5 @@
 # tenguliam.github.io
-cat animate
-this is a stupid game i made in pico-8 as a practice
+this is a stupid game thats barely a game that i made in pico-8 as a practice
 
 then my friend said they wanted to play it
 
