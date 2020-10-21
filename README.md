@@ -7,11 +7,11 @@ then my friend said they wanted to play it
 
 so i'm trying to put it on the website
 
-## Playtesters
+## playtesters
 
 my friends madi dan and holly thanks guys :)
 
-## Changelog
+## changelog
 
 ### [v0.1.1] (beta) - 21/10/2020
 bug fixes:
