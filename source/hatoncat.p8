@@ -45,7 +45,7 @@ end
 
 --collision
 function hatoncat(cat,hat)
-	if	hat.x>cat.x-10 and hat.x<cat.x+10
+	if	hat.x>=cat.x-5 and hat.x<=cat.x+5
 	and hat.y<=cat.y+10 and hat.y>=cat.y+10 then
 		return true	
 	else
@@ -58,8 +58,8 @@ function continue()
 	if hatoncat(hat,cat)==true then
 		starttimer=1
 		if timer==59 then
-			cat.x=flr(rnd(113)+5)
-			cat.y=flr(rnd(113)+5)
+			cat.x=flr(rnd(105))
+			cat.y=flr(rnd(105))
 		end
 	end
 end
