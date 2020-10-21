@@ -14,5 +14,13 @@ bug fixes:
 
 you can no longer put the hat on the cat from below
 
+score is now shown in bottom left for more digit display
+
+version number is now displayed bottom right for debugging purposes
+
+releases added for windows, linux, mac and raspi
+
+source code added
+
 ### [v0.1] (beta beta) - 20/10/2020
 initial version (very bad)
