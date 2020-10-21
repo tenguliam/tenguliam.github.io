@@ -1,6 +1,13 @@
 pico-8 cartridge // http://www.pico-8.com
 version 29
 __lua__
+--[[hat on the cat
+v0.1.1 beta
+all new! collision code and
+score digits fixed
+tenguliam[tm] 21/10/2020
+]]--
+
 function _init()
 	--music
 	sfx(10)
@@ -36,10 +43,10 @@ function movement()
 	end
 end
 
---is the hat on the cat?
+--collision
 function hatoncat(cat,hat)
 	if	hat.x>cat.x-10 and hat.x<cat.x+10
-	and hat.y>cat.y-10 and hat.y<cat.y+10 then
+	and hat.y<=cat.y+10 and hat.y>=cat.y+10 then
 		return true	
 	else
 		return false
@@ -147,7 +154,8 @@ function _draw()
 	zspr(2,1,1,hat.x,hat.y,2)
 	
 	--score
-	print(score,113,1,14)
+	print("score",1,120,14)
+	print(score,23,120,14)
 	
 	--meow txt
 	if timer>0 and timer<60 then
@@ -162,15 +170,20 @@ function _draw()
 		end
 	end
 	
+	--version
+	print("v0.1.1 beta",100,120)
+	
+
 	--[[debug
+	rectfill(hat.x,hat.y+15,hat.x+15,hat.y+15)
 	print(cat.shouldmove,1,5)
 	print(timer,1,10)
 	print(hatoncat(cat,hat),1,15)
 	print(hatoncat(hat,cat),1,10)
-	print(cat.x,1,15)
 	print(hat.x,1,20)
-	print(cat.y,1,25)
 	print(hat.y,1,30)
+	print(cat.x,1,15)
+	print(cat.y,1,25)
 	print(score,1,40)
 	print(timer,1,50)]]--
 end
