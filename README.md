@@ -18,6 +18,10 @@ bug fixes:
 
 you can no longer put the hat on the cat from below
 
+cat will no longer spawn offscreen
+
+cat dialogue bug is now fixed
+
 score is now shown in bottom left for more digit display
 
 version number is now displayed bottom right for debugging purposes
